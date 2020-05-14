@@ -1,0 +1,28 @@
+				PROJECT COMPETITION: Submission 3
+
+
+Name: Parinita Badre
+USC ID: 8804379764
+USC email: badre@usc.edu
+
+Method Description: 
+
+Collaborative filtering Baseline only algorithm.
+
+1. I used the pandas library to read the dataset. Since the dataset is sparse, matrix factorisation is needed to obtain an RMSE < 1.
+2. The scikit-surprise library offers a variety of options for recommendation systems. Out of these, the Alternating Least Squares (ALS) method works out to be the best one. ALS is a matrix factorization algorithm that scales well to large datasets. Since the yelp dataset is large and fits the criteria, ALS works well for this type of dataset.
+3. Obtaining a good RMSE involves manually tuning the parameters to get the optimum score.  I used number of epochs: 9, regularisation parameter for user: 7.6, regularisation parameter for items: 3.5
+
+Error Distribution:
+
+>=0 and <1: 100292
+>=1 and <2: 34266
+>=2 and <3: 6639
+>=3 and <4: 844
+>=4 and <5: 3
+
+RMSE:
+0.999837467236
+
+Execution time:
+4.9893 seconds
